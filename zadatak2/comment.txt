@@ -1,0 +1,2 @@
+Obrisani su /**/ komentari //aaaaasdasds
+drugi red
