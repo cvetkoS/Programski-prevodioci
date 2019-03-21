@@ -75,12 +75,12 @@ statement
   : compound_statement
   | assignment_statement
   | if_statement
-  | jump_statement
+  | return_statement
+  | break_statement
   ;
 
-jump_statement
+break_statement
   : _BREAK _SEMICOLON
-  | return_statement
   ;
 
 compound_statement

@@ -443,7 +443,7 @@ static const yytype_uint8 yytranslate[] =
 static const yytype_uint8 yyrline[] =
 {
        0,    35,    35,    39,    40,    44,    48,    51,    53,    57,
-      60,    62,    66,    69,    71,    75,    76,    77,    78,    82,
+      60,    62,    66,    69,    71,    75,    76,    77,    78,    79,
       83,    87,    91,    95,    96,   100,   101,   102,   103,   107,
      108,   112,   115,   117,   121,   122,   126,   130,   134
 };
@@ -459,7 +459,7 @@ static const char *const yytname[] =
   "_RBRACKET", "_ASSIGN", "_SEMICOLON", "_AROP", "_RELOP", "_BREAK",
   "ONLY_IF", "$accept", "program", "function_list", "function", "type",
   "parameter", "body", "variable_list", "variable", "statement_list",
-  "statement", "jump_statement", "compound_statement",
+  "statement", "break_statement", "compound_statement",
   "assignment_statement", "num_exp", "exp", "literal", "function_call",
   "argument", "if_statement", "if_part", "rel_exp", "return_statement", YY_NULLPTR
 };
@@ -505,9 +505,9 @@ static const yytype_uint8 yydefact[] =
 {
        0,     6,     0,     2,     3,     0,     1,     4,     0,     7,
        0,     0,     8,     0,    10,     5,    13,     0,    11,     0,
-       0,     0,     0,     0,    13,     9,     0,    14,    18,    15,
-      16,    17,    34,    20,    12,     0,    26,    29,    30,     0,
-       0,    23,    25,    27,     0,     0,    19,     0,     0,     0,
+       0,     0,     0,     0,    13,     9,     0,    14,    19,    15,
+      16,    17,    34,    18,    12,     0,    26,    29,    30,     0,
+       0,    23,    25,    27,     0,     0,    20,     0,     0,     0,
       32,     0,    38,     0,     0,    21,    35,     0,     0,    33,
        0,    28,    24,    22,    37,    36,    31
 };
@@ -570,7 +570,7 @@ static const yytype_uint8 yystos[] =
 static const yytype_uint8 yyr1[] =
 {
        0,    20,    21,    22,    22,    23,    24,    25,    25,    26,
-      27,    27,    28,    29,    29,    30,    30,    30,    30,    31,
+      27,    27,    28,    29,    29,    30,    30,    30,    30,    30,
       31,    32,    33,    34,    34,    35,    35,    35,    35,    36,
       36,    37,    38,    38,    39,    39,    40,    41,    42
 };
@@ -579,8 +579,8 @@ static const yytype_uint8 yyr1[] =
 static const yytype_uint8 yyr2[] =
 {
        0,     2,     1,     1,     2,     6,     1,     0,     2,     4,
-       0,     2,     3,     0,     2,     1,     1,     1,     1,     2,
-       1,     3,     4,     1,     3,     1,     1,     1,     3,     1,
+       0,     2,     3,     0,     2,     1,     1,     1,     1,     1,
+       2,     3,     4,     1,     3,     1,     1,     1,     3,     1,
        1,     4,     0,     1,     1,     3,     5,     3,     3
 };
 
