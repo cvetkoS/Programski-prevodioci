@@ -65,7 +65,7 @@ variable_list
 
 variable
   : type _ID _SEMICOLON
-  | type _ID _LBLOCK num_exp _RBLOCK _SEMICOLON
+  | type _ID _LBLOCK literal _RBLOCK _SEMICOLON
   ;
 
 statement_list
@@ -85,9 +85,9 @@ compound_statement
   ;
 
 assignment_statement
-  : _ID _ASSIGN literal _SEMICOLON
+  : _ID _ASSIGN num_exp _SEMICOLON
   | _ID _LBLOCK literal _RBLOCK _ASSIGN literal _SEMICOLON
-  | _ID _LBLOCK literal _RBLOCK _ASSIGN _ID exp _AROP literal _SEMICOLON
+  | _ID _LBLOCK literal _RBLOCK _ASSIGN _ID num_exp _AROP literal _SEMICOLON
   ;
 
 num_exp
