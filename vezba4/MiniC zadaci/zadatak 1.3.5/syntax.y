@@ -85,9 +85,9 @@ compound_statement
   ;
 
 assignment_statement
-  : _ID _ASSIGN num_exp _SEMICOLON
-  | _ID _LBLOCK num_exp _RBLOCK _ASSIGN num_exp _SEMICOLON
-  | _ID _LBLOCK num_exp _RBLOCK _ASSIGN _ID _LBLOCK num_exp _RBLOCK _AROP num_exp _SEMICOLON
+  : _ID _ASSIGN literal _SEMICOLON
+  | _ID _LBLOCK literal _RBLOCK _ASSIGN literal _SEMICOLON
+  | _ID _LBLOCK literal _RBLOCK _ASSIGN _ID exp _AROP literal _SEMICOLON
   ;
 
 num_exp
@@ -100,6 +100,7 @@ exp
   | _ID
   | function_call
   | _LPAREN num_exp _RPAREN
+  | _LBLOCK literal _RBLOCK
   ;
 
 literal
