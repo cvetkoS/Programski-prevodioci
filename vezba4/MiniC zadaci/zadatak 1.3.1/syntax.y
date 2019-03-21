@@ -80,7 +80,7 @@ statement
   ;
 
 while_statement
-  : _WHILE _LPAREN rel_exp _RPAREN assignment_statement
+  : _WHILE _LPAREN rel_exp _RPAREN statement
   ;
 
 compound_statement
