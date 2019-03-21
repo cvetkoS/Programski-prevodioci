@@ -57,10 +57,6 @@ body
   : _LBRACKET variable_list statement_list _RBRACKET
   ;
 
-id_list
-  :
-  | id_list _COMMA _ID
-  ;
 
 variable_list
   : /* empty */
@@ -68,10 +64,13 @@ variable_list
   ;
 
 variable
-  : type _ID _SEMICOLON
-  | type _ID id_list _SEMICOLON
+  : vars _SEMICOLON
   ;
 
+vars
+  : type _ID
+  | vars _COMMA _ID
+  ;
 statement_list
   : /* empty */
   | statement_list statement
